@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcu.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="flex-container">
+        <h1 class="title">Calculator</h1>
+        <input class="input" type="text" id="myNumber" placeholder="0">
+        <div class="row">
+            <div class="button10"><button class="grey" onclick="clearInput()">AC</button></div>
+            <div class="button11"><button class="grey" onclick="deleteLast()">Del</button></div>
+            <div class="button12"><button class="grey" onclick="appendToInput('%')">%</button></div>
+            <div class="button13"><button class="orang" onclick="appendToInput('/')">/</button></div>
+        </div>
+        <div class="row">
+            <div class="button7"><button onclick="appendToInput('7')">7</button></div>
+            <div class="button8"><button onclick="appendToInput('8')">8</button></div>
+            <div class="button9"><button onclick="appendToInput('9')">9</button></div>
+            <div class="button1"><button class="orang" onclick="appendToInput('*')">X</button></div>
+        </div>
+        <div class="row">
+            <div class="button6"><button onclick="appendToInput('6')">6</button></div>
+            <div class="button5"><button onclick="appendToInput('5')">5</button></div>
+            <div class="button4"><button onclick="appendToInput('4')">4</button></div>
+            <div class="button14"><button class="orang" onclick="appendToInput('-')">-</button></div>
+        </div>
+        <div class="row">
+            <div class="button1"><button onclick="appendToInput('1')">1</button></div>
+            <div class="button2"><button onclick="appendToInput('2')">2</button></div>
+            <div class="button3"><button onclick="appendToInput('3')">3</button></div>
+            <div class="button15"><button class="orang" onclick="add('+')">+</button></div>
+        </div>
+        <div class="row">
+            <div class="button16"><button onclick="appendToInput('0')">0</button></div>
+            <div class="button17"><button onclick="appendToInput('.')">.</button></div>
+            <div class="button18"><button class="orang" onclick="calculate()">=</button></div>
+        </div>
+    </section>
+
+    <script>
+
+// function clearInput(value){
+//      document.getElementById("myNumber").value='';
+// }
+
+
+// function add(value){
+//     const inputField=document.getElementById("myNumber");
+//     inputField.value += value;
+
+// }
+
+// function remainder(value){
+//     const inputField =document.getElementById("myNumber");
+//     inputField.value % value;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         function appendToInput(value) {
+//             const inputField = document.getElementById("myNumber");
+//             inputField.value += value;
+//         }
+
+//         function clearInput() {
+//             document.getElementById("myNumber").value = '';
+//         }
+
+//         function deleteLast() {
+//             const inputField = document.getElementById("myNumber");
+//             inputField.value = inputField.value.slice(0, -1);
+//         }
+
+//         function calculateResult() {
+//             const inputField = document.getElementById("myNumber");
+//             try {
+//                 inputField.value = eval(inputField.value.replace('X', '*'));
+//             } catch (error) {
+//                 inputField.value = 'Error';
+//             }
+//         }
+
+//         // Keyboard input handling
+//         document.addEventListener('keydown', function(event) {
+//             const key = event.key;
+//             if ('0123456789+-*/.%'.includes(key)) {
+//                 appendToInput(key);
+//             } else if (key === 'Backspace') {
+//                 deleteLast();
+//             } else if (key === 'Enter') {
+//                 calculateResult();
+//             } else if (key === 'Escape') {
+//                 clearInput();
+//             }
+//         });
+//     </script>
+    <script src="script.js"></script>
+</body>
+</html>

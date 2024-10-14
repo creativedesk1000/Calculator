@@ -1,0 +1,153 @@
+ body {
+     font-family: 'Roboto', sans-serif;
+     background-color: black;
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     overflow: hidden;
+ }
+
+ .flex-container {
+     margin: 0 auto;
+     padding: 2rem;
+     background-color: #111111;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     width: 90%;
+     max-width: 400px;
+     text-align: center;
+     position: relative;
+ }
+
+ .flex-container::after , .flex-container::before{
+     --angle:0deg;
+    content: '';
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     /* background-image: conic-gradient(#ff4545, #006aff, #00ff99, #ff0095, #ff4545); */
+     background-image: conic-gradient(from var(--angle),transparent 50%,blue,#00ff99, #ff0095, #ff4545);
+
+     top: 50%;
+     left: 50%;
+     translate: -50% -50%;
+     z-index: -5;
+     padding: 3px;
+     border-radius: 5px;
+ animation: 3s spin linear infinite;
+ }
+.flex-container::before{
+    filter: blur(1.5rem);
+    opacity: 0.7;
+
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+ h1.title {
+     text-align: center;
+     color: white;
+     margin-bottom: 20px;
+ }
+
+ .input {
+     display: flex;
+     width: 100%;
+     height: 50px;
+     font-size: 24px;
+     text-align: right;
+     padding: 0 10px;
+     margin-bottom: 20px;
+     border: none;
+     border-radius: 5%;
+     box-shadow: inset 0 2px 5px rgba(253, 242, 242, 0.2);
+
+ }
+
+ .row {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+
+ .button1,
+ .button2,
+ .button3,
+ .button4,
+ .button5,
+ .button6,
+ .button7,
+ .button8,
+ .button9,
+ .button10,
+ .button11,
+ .button12,
+ .button13,
+ .button14,
+ .button15,
+ .button16,
+ .button17,
+ .button18 {
+     flex: 1;
+     margin: 0 5px;
+ }
+
+ button {
+     width: 100%;
+     height: 60px;
+     font-size: 24px;
+     color: white;
+     background-color: #007bff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     border-radius: 35%;
+ }
+
+ .grey {
+     background-color: rgb(167, 160, 160);
+     color: #111111;
+ }
+
+ .orang {
+     background-color: orange;
+     color: #f8f9fa;
+
+ }
+
+ button:hover {
+     background-color: #0056b3;
+     font-size: 26px;
+ }
+
+ .orang:hover {
+     background-color: rgb(233, 97, 18);
+ }
+
+ .grey:hover {
+     background-color: rgb(69, 65, 63);
+ }
+
+ button a {
+     text-decoration: none;
+     color: white;
+     display: block;
+     height: 100%;
+     width: 100%;
+     line-height: 60px;
+ }
