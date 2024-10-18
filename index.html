@@ -32,7 +32,7 @@
             <div class="button1"><button onclick="appendToInput('1')">1</button></div>
             <div class="button2"><button onclick="appendToInput('2')">2</button></div>
             <div class="button3"><button onclick="appendToInput('3')">3</button></div>
-            <div class="button15"><button class="orang" onclick="add('+')">+</button></div>
+            <div class="button15"><button class="orang" onclick="appendToInput('+')">+</button></div>
         </div>
         <div class="row">
             <div class="button16"><button onclick="appendToInput('0')">0</button></div>
@@ -41,73 +41,7 @@
         </div>
     </section>
 
-    <script>
-
-// function clearInput(value){
-//      document.getElementById("myNumber").value='';
-// }
-
-
-// function add(value){
-//     const inputField=document.getElementById("myNumber");
-//     inputField.value += value;
-
-// }
-
-// function remainder(value){
-//     const inputField =document.getElementById("myNumber");
-//     inputField.value % value;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//         function appendToInput(value) {
-//             const inputField = document.getElementById("myNumber");
-//             inputField.value += value;
-//         }
-
-//         function clearInput() {
-//             document.getElementById("myNumber").value = '';
-//         }
-
-//         function deleteLast() {
-//             const inputField = document.getElementById("myNumber");
-//             inputField.value = inputField.value.slice(0, -1);
-//         }
-
-//         function calculateResult() {
-//             const inputField = document.getElementById("myNumber");
-//             try {
-//                 inputField.value = eval(inputField.value.replace('X', '*'));
-//             } catch (error) {
-//                 inputField.value = 'Error';
-//             }
-//         }
-
-//         // Keyboard input handling
-//         document.addEventListener('keydown', function(event) {
-//             const key = event.key;
-//             if ('0123456789+-*/.%'.includes(key)) {
-//                 appendToInput(key);
-//             } else if (key === 'Backspace') {
-//                 deleteLast();
-//             } else if (key === 'Enter') {
-//                 calculateResult();
-//             } else if (key === 'Escape') {
-//                 clearInput();
-//             }
-//         });
-//     </script>
+   
     <script src="script.js"></script>
 </body>
 </html>
